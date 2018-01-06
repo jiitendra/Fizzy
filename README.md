@@ -1,5 +1,8 @@
 # Fizzy
-Fizzy, for android run-time permissiona. It's a simplest approach to request and handle android run-time permissions. The objective of this library is to provide a clean architecture for requesting runtime permissions and remove boiler plate code form your activity. 
+
+Fizzy, for android run-time permissions. It's a simplest approach to request and handle android run-time permissions. The objective of this library is to provide a clean architecture for requesting runtime permissions and remove boiler plate code form your activity. 
+
+------
 
 ### Dependency
 
