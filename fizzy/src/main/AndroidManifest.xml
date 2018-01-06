@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidfizz.fizzy">
+
+    <application>
+        <activity
+            android:name=".PermissionActivity"
+            android:theme="@style/Fizzy.Transparent" />
+    </application>
+</manifest>
