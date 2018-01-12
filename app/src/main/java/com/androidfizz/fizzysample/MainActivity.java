@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         requestPermission();
     }
 
-    /*
     //for multiple permissions
     private void requestPermission() {
         new Fizzy
@@ -43,10 +42,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .debug(true)
                 .build()
                 .request();
-    }*/
+    }
 
     //for single permission
-    private void requestPermission() {
+   /* private void requestPermission() {
         new Fizzy
                 .Builder(this)
                 .requiredPermission(this,
@@ -54,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .debug(true)
                 .build()
                 .request();
-    }
+    }*/
 
     @Override
     public void onPermissionChecked(PermissionInfo permissionInfo) {

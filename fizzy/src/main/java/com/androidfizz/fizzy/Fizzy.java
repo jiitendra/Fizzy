@@ -24,6 +24,8 @@ public final class Fizzy {
     private WeakReference<Context> contextWeakReference;
     private static FizzyInstance instance;
 
+    private Fizzy(){}
+
     public Fizzy(Builder builder) {
         contextWeakReference = new WeakReference<>(builder.context);
 
