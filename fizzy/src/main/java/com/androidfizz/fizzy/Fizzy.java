@@ -29,6 +29,10 @@ public final class Fizzy {
     public Fizzy(Builder builder) {
         contextWeakReference = new WeakReference<>(builder.context);
 
+        if(builder.singlePermissionListener==null && builder.multiplePermissionListener==null){
+            return;
+        }
+
         if (builder.multiplePermissionListener != null) {
             instance = new FizzyInstance(builder.permissions, builder.multiplePermissionListener,
                     builder.debug);
