@@ -15,7 +15,7 @@ For including library into your ``build.gradle``
 
 ```groovy
 dependencies{
-    compile 'com.androidfizz.fizzy:fizzy:1.0'
+    compile 'com.androidfizz.fizzy:fizzy:1.0.1'
 }
 ```
 
