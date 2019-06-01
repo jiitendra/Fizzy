@@ -10,7 +10,7 @@ buildscript {
 ext {
     bintrayRepo = 'AndroidFizz' // your repo name created on bintray site
     bintrayName = 'Fizzy' // has to be same as your library module name
-    publishedGroupId = 'com.androidfizz.fizzy' //prefix name of your libraray
+    publishedGroupId = 'com.androidfizz.fizzy' //prefix name of your library
     libraryName = 'fizzy'
     artifact = 'fizzy' // has to be same as your library module name
     libraryDescription = 'A simplest approach to request and handle android run-time permissions'
@@ -27,16 +27,14 @@ ext {
 
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 26
-        versionCode 2
-        versionName "1.0.1"
-
+        targetSdkVersion 28
+        versionCode 3
+        versionName "1.0.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
@@ -49,12 +47,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-
+    implementation 'com.android.support:appcompat-v7:28.0.0'
 }
 
 

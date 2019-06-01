@@ -51,9 +51,13 @@ final class FizzyInstance {
         this.isForMultiplePermissions = true;
     }
 
+    boolean hasPermission(@NonNull Context context, @NonNull String permission) {
+        return ContextCompat.checkSelfPermission(context, permission)
+            == PackageManager.PERMISSION_GRANTED;
+    }
 
     void startActivity(Context context) {
-        if (Build.VERSION.SDK_INT >= 23) {
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP_MR1) {
             if (!isPermissionsAlreadyGranted(context)) {
                 context.startActivity(new Intent(context, PermissionActivity.class));
             } else {
